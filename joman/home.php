@@ -1,7 +1,10 @@
 <?php
         session_start();
-
-        $username = $_SESSION['uname'];
+        if(isset($_SESSION['uname']){
+                header('location: home.php');
+        }
+                
+       
 ?>
 
 
